@@ -2,8 +2,8 @@
 
 ### Command:
 ```bash
-  'create <Project NAME>'
-  'create <project_name> <l>'   - init for locally
+  'create < project_NAME >'
+  'create < project_NAME > <l>'   - init for locally
 ```   
 
 ### Automating we are automating:
