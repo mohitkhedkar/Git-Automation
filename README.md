@@ -6,14 +6,14 @@
   'create < project_NAME > <l>'   - init for locally
 ```   
 
-### Automating we are automating:
+### Git Commands we are Automating:
 ```bash
   $ git init
   $ touch README.md
   $ git add .
   $ git git commit -m "first commit"
   $ git branch -M main
-  $ git remote add origin <remote link>
+  $ git remote add origin <remote repo link>
   $ git push -u origin main
  
 ``` 
