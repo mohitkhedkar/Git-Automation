@@ -11,7 +11,7 @@
   $ git init
   $ touch README.md
   $ git add .
-  $ git commit -m "first commit"
+  $ git commit -m "Initial commit"
   $ git branch -M main
   $ git remote add origin <remote repo link>
   $ git push -u origin main
@@ -24,8 +24,8 @@ git clone https://github.com/mohitkhedkar/Git-Automation.git
 cd Git-Automation
 pip install -r requirements.txt
 touch .env
-Then open the .env file and store your username, password, and desired file destination. 
-Use the provided format at the bottom of this README.
+  -Then open the .env file and store your username, password, and desired file destination. 
+    Use the provided format at the bottom of this README.
 ```
 
 ### ENV file format:
