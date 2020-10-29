@@ -2,8 +2,7 @@
 
 ### Command:
 ```bash
-  'create < project_NAME >'
-  'create < project_NAME > <l>'   - init for locally
+ 
 ```   
 
 ### Git Commands we are Automating:
@@ -23,17 +22,9 @@
 git clone https://github.com/mohitkhedkar/Git-Automation.git
 cd Git-Automation
 pip install -r requirements.txt
-touch .env
-  -Then open the .env file and store your username, password, and desired file destination. 
-    Use the provided format at the bottom of this README.
+    
 ```
 
-### ENV file format:
-```bash
-USERNAME="Username123"
-PASSWORD="123456789"
-FILEPATH="D:\projects"
-```
 
 ### Contibutors
 1. [Megha Pal](https://github.com/meghapal02).
