@@ -7,6 +7,7 @@ load_dotenv()
 
 GITHUB_TOKEN =os.getenv("GITHUB_TOKEN")
 
+# TODO: creating the .env file and storing the github access token in there
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--name", "-n", type=str, dest="name", required=True)
@@ -15,8 +16,8 @@ args = parser.parse_args()
 repo_name = args.name
 is_private = args.is_private
 
-REPO_PATH = ""
-GITHUB_USER = ''
+REPO_PATH = "E:\Git"
+GITHUB_USER = 'meghapal02'
 GITHUB_URL = "https://api.github.com"
 
 if is_private:
@@ -29,23 +30,4 @@ headers = {
     "Accept": "application/vnd.github.v3+json"
 }
 
-try:
-    r = requests.post(GITHUB_URL + "/user/repos", data=payload, headers=headers)
-    r.raise_for_status()
-except requests.exceptions.RequestException as err:
-    raise SystemExit(err)
-
-try:
-    os.chdir(REPO_PATH)
-    os.system("mkdir " + repo_name)
-    os.chdir(repo_name)
-    os.system('git init')
-    os.system('git remote add origin https://github.com/' + GITHUB_USER + '/' + repo_name + '.git')
-    os.system(f'echo # {repo_name} >> README.md')
-    os.system('git add README.md')
-    os.system('git commit -m "Initial Commit" ')
-    os.system('git branch -M main')
-    os.system('git push origin main')
-    os.system('code .')
-except FileExistsError as err:
-    raise SystemExit(err)
+# TODO: Niraj -> Create a local repo commands and initialize first commit 
