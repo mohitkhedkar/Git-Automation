@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 import os
 import requests
@@ -15,8 +17,8 @@ args = parser.parse_args()
 repo_name = args.name
 is_private = args.is_private
 
-REPO_PATH = ""
-GITHUB_USER = ''
+REPO_PATH = " "           # add your direectory path where you want the projects. 
+GITHUB_USER = ' '            # add your github username.
 GITHUB_URL = "https://api.github.com"
 
 if is_private:
