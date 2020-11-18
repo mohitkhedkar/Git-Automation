@@ -43,7 +43,13 @@ try:
     os.chdir(repo_name)
     os.system('git init')
     os.system('git remote add origin https://github.com/' + GITHUB_USER + '/' + repo_name + '.git')
-    
+    os.system(f'echo "# {repo_name}" >> README.md')
+    os.system('git add README.md')
+    os.system('git commit -m "Initial Commit" ')
+    os.system('git branch -M main')
+    os.system('git push origin main')
+    os.system('code .')
+
 except FileExistsError as err:
     raise SystemExit(err) 
     
