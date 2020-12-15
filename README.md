@@ -28,27 +28,25 @@
 ``` 
 
  ---
-### Setup:
+### Setup: 
+Open the Command prompt
 ```bash
 git clone https://github.com/mohitkhedkar/Git-Automation.git
 cd Git-Automation
 pip install -r requirements.txt
-touch .env 
-add REPO PATH in create.py 
-add USERNAME in create.py
-
+register.py
 ```
+add `GITHUB TOKEN` , `GITHUB USERNAME` & `REPOPATH` in the Registration Window and `SUBMIT`
+
+![](Screenshots/register.JPG)
+
 ### For running command from anywhere on system:
 ```bash
 path:
   "Git-Automation" folder directory to path
 ```
 ---
-### .env setup: 
-  after running `touch .env` command open the `.env` file and paste your github token.
-```bash
- GITHUB_TOKEN=" "
-```
+
 ### Getting the Github Token:
 
  Go to Github Settings -> Developer settings -> Personal access tokens -> Generate new token -> Note: `git automation`
@@ -68,7 +66,7 @@ path:
     - [x] read:org
 
  Click->`Generate Token`
- Copy the generated token and paste in `.env file`.
+ Copy the generated token and paste in `Registration Window`.
  
  ---
 ### Contibutors
