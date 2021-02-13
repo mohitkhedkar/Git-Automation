@@ -1,5 +1,9 @@
 # Git Project Initialization Automation 
 
+![GitHub](https://img.shields.io/github/license/mohitkhedkar/Git-Automation?style=flat)
+![GitHub last commit](https://img.shields.io/github/last-commit/mohitkhedkar/Git-Automation?style=flat)
+![Languages](https://img.shields.io/github/languages/count/mohitkhedkar/Git-Automation?style=flat-square)
+
 ## Command:
 
 ### For making `public repo`:
